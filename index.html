@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Arsenal:ital,wght@0,400;0,700;1,400;1,700&family=Nanum+Myeongjo:wght@400;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <img class="logo" src="img/logo.jpg" alt="logo" />
+      <nav class="nav-links" id="nav-links">
+    <a href="#about" class="font">Про нас</a>
+    <a href="#price" class="font">Тарифи</a>
+    <a href="#buy" class="font">Зробити замовлення</a>
+    <a href="#reviews" class="font">Вiдгуки</a>
+    <a href="#contacts" class="font">Контакти</a>
+  </nav>
+      <div class="container1">
+          <p class="number1">+380 71 143 80</p>
+          <img class="social1" src="img/social.jpg" alt="social">
+        </div>
+      <button class="burger-menu" id="burger-menu">
+      <span class="line"></span>
+      <span class="line"></span>
+      <span class="line"></span>
+  </button>
+  <script>
+    const burgerMenu = document.getElementById('burger-menu');
+    const navLinks = document.getElementById('nav-links');
+
+    burgerMenu.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+    });
+</script>
+      </header>
+      <div class="page1"> 
+     <h1 class="H11">Знайдiть свою книгу-i вона змiнить ваше життя!</h1> 
+      <button class="b1">Оформити замовлення</button> 
+    </div>
+    <div id="about" class="page2">
+      <h1 class="H21">Про нас</h1>
+      <div class="container21">
+        <img class="f21" src="img/foto21.jpg" alt="foto21" />
+        <div class="text-container21">
+          <h2 class="H22">Хто ми?</h2>
+          <p class="p21">
+            Ми — команда книголюбiв, яка прагне зробити свiт лiтератури
+            доступнiшим та ближчим для кожного. Ми вiримо, що кожна людина зможе
+            знайти ту саму книгу, яка залишиться з нею назавжди. Наша мiсiя —
+            допомогти вам знайти цi лiтературнi перлини та зробити читання
+            важливою частиною вашого життя.
+          </p></div></div>
+      <div class="container22">
+        <div >
+          <h2 class="H23">Як це працює?</h2>
+          <p class="p22">
+            Ми створили унiкальну послугу— щомiсячну пiдписку на книжкову
+            розсилку, яка створена саме для вас. Пiсля того як ви оберете
+            улюбленi жанри, наша команда ретельно пiдбере книги, що вiдповoдають
+            вашим вподобанням. Щомiсяця ви отримуватимете свiжу добiрку книг,
+            яка захопить вас з перших сторiнок.
+          </p></div>
+        <img class="f22" src="img/foto22.jpg" alt="foto22" />
+      </div>
+      <div class="container23">
+        <img class="f23" src="img/foto23.jpg" alt="foto23" />
+        <div class="text-container23">
+          <h2 class="H24">Чому це зручно?</h2>
+          <p class="p23">
+            - Персоналiзований пiдбiр — ми враховуватимо вашi лiтературнi смаки
+            та кожного мiсяця надсилатимемо книги в обраних жанрах.
+            <p class="p23"> - Економiя
+            часу — бiльше не потрiбно витрачати години на пошуки цiкавого чтива.
+            Ми зробимо це за вас! </p>
+            <p class="p23">- Рiзноманiття — з нами ви вiдкриватимете
+            нових авторiв та свiти, про якi, можливо, нiколи ранiше не чули.</p>
+          </p></div></div></div>
+    <div id="price" class="page3">
+      <h1 class="H31">Тарифи</h1>
+      <div class="container3">
+      <div class="box1">
+        <img class="f31" src="img/3books.jpg" alt="3 book">
+        <p class="p31">3 Книги - 1500 грн</p>
+        <button class="b3">Обрати</button>
+      </div>
+      <div>
+      <div class="box2">
+        <img class="f31" src="img/5books.jpg" alt="5 book">
+        <p class="p31">5 Книг - 2500 грн</p>
+        <button class="b3">Обрати</button>
+        </div></div>
+      <div>
+      <div class="box3">
+        <img class="f31" src="img/10 book.jpg" alt="10 book">
+        <p class="p31">10 Книг - 5000 грн</p>
+        <button class="b3">Обрати</button>
+        </div></div></div></div></div> 
+      <div id="buy" class="page4">
+      <h1 class="H41">Оформити пiдписку</h1>
+      <div class="form">
+       <form action="#" method="POST" class="application-form">
+            <label for="fullname">Ім'я та прізвище:</label>
+            <input class="textbox" type="text" id="fullname" name="fullname" required>
+
+            <label for="phone">Номер телефону:</label>
+            <input class="textbox" type="tel" id="phone" name="phone" required>
+
+            <label for="email">Електронна пошта:</label>
+            <input class="textbox" type="email" id="email" name="email" required>
+
+            <label for="genres">Жанри:</label>
+            <input class="textbox" type="text" id="genres" name="genres" required>
+
+            <label for="authors">Улюблені автори:</label>
+            <input class="textbox" type="text" id="authors" name="authors" required>
+
+            <label for="destination">Куди відправити:</label>
+            <input class="textbox" type="text" id="destination" name="destination" required>
+
+            <label for="wishes">Побажання:</label>
+            <textarea class="textbox" id="wishes" name="wishes" rows="4"></textarea>
+
+            <button class="b4" type="submit">Оформити</button></form>
+    </div></div>
+    <div id="reviews" class="page5">
+      <h1 class="H51">Вiдгуки</h1>
+      <div class="container5">
+      <img class="f51" src="img/foto4.jpg" alt="стрілочка">
+      <div class="box51">
+        <div class="container51">
+        <img class="f52" src="img/foto52.jpg" alt="фото">
+        <p class="p51">Олена Коваль</p></div>
+        <p class="p52">Вони завжди швидко вiдповiдали, якщо у мене були запитання чи сумнiви щодо чогось, та всi книги завжди чудовi. </p></div>
+      <div class="box52">
+        <div class="container51">
+        <img class="f52" src="img/foto52.jpg" alt="фото">
+        <p class="p51">Вiктор Кметик</p></div>
+        <p class="p52">Велика рiзноманiтнiсть чудових книг i, а також команда пiдтримки користувачiв завжди готова допомогти!
+       </p></div>
+      <div class="box52">
+        <div class="container51">
+        <img class="f52" src="img/foto52.jpg" alt="фото">
+        <p class="p51">Янiна Пролiт</p></div>
+        <p class="p52">Я люблю всi книги, якi я отримала вiд вас! Обслуговування також чудове.!
+       </p></div>
+       <img class="f53" src="img/foto42.jpg" alt="стрілочка">
+      </div></div>
+      <div id="contacts" class="page6">
+        <h1 class="H61">Контакти</h1>
+        <div class="container61">
+          <div class="box61"> 
+            <div class="container611">
+              <img class="f61" src="img/phone.jpg" alt="ярлик">
+              <p class="p61">+380 98 71 143 80</p> </div>
+            <div class="container611">
+              <img class="f61" src="img/email.jpg" alt="ярлик">
+              <p class="p61">booksofthemounth@gmail.com</p> </div>
+            <div class="container611">
+              <img class="f61" src="img/location.jpg" alt="ярлик">
+              <p class="p61">м.Львiв вул. Степана Бандери 12</p>
+            </div>  </div>
+        <div class="container62">
+          <h2 class="H62">Напишiть нам</h2>
+          <div class="box62">
+          <form action="#" method="POST" class="form6">
+            <label class="label6" for="name">Ім'я:</label>
+            <input class="textbox6" type="text" id="name" name="name" required>
+            
+            <label class="label6" for="surname">Прізвище:</label>
+            <input class="textbox6" type="text" id="surname" name="surname" required>
+
+            <label class="label6" for="phone">Номер телефону:</label>
+            <input class="textbox6" type="tel" id="phone" name="phone" required>
+
+            <label class="label6" for="email">Електронна пошта:</label>
+            <input class="textbox6" type="email" id="email" name="email" required>
+
+            <label class="label6" for="message">Повідомлення:</label>
+            <textarea class="textbox6" id="massege" name="massege" rows="2"></textarea>
+
+            <button class="b6" type="submit">Надіслати</button></form>
+          </div></div></div></div>
+        <div class="page7">
+        <video autoplay muted loop id="background-video">
+  <source src="img/video.mp4" type="video/mp4">
+  Ваш браузер не підтримує відео тег.
+</video></div>
+      <div class="footer">
+        <img src="img/logo.jpg" alt="logo">
+       <div class="box7"> <div class="container72">
+              <img class="f71" src="img/email.jpg" alt="ярлик">
+              <p class="p71">booksofthemounth@gmail.com</p> </div>
+            <div class="container72">
+              <img class="f71" src="img/location.jpg" alt="ярлик">
+              <p class="p71">м.Львiв вул. Степана Бандери 12</p>
+            </div></div>
+        <div class="container7">
+          <p class="number">+380 71 143 80</p>
+          <img class="social" src="img/social.jpg" alt="social">
+        </div></div></div>
+
+  </body>
+</html>
